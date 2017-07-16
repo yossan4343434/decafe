@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'cafe#home'
+  resources :caves
+  root 'caves#index'
 end
