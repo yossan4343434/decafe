@@ -61,6 +61,12 @@ class CavesController < ApplicationController
     end
   end
 
+  def detect
+    longtitude = 35.6445617
+    latitude = 139.66970979999996
+    @cafe = Cafe.where(longtitude: longtitude, latitude: latitude)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_cafe
